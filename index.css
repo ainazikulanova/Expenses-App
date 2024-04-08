@@ -5,3 +5,33 @@
 .status_red{
     color: red;
 }
+
+h1{
+    font-size: 30px;
+}
+
+.input{
+    margin-bottom: 10px;
+}
+.button{
+    width: 100px;
+    background-color:#0094FF;
+    ;
+    color: white;
+}
+
+.btn-set{
+    width: 150px;
+    background-color: rgb(200, 81, 30);
+    color: white;
+}
+
+.section{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 150px;
+    row-gap: 80px;
+    margin-bottom: 20px;
+}
