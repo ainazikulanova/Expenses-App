@@ -7,6 +7,7 @@ const historyNode = document.querySelector('.js-history');
 const totalNode = document.querySelector('.js-total');
 const limitNode = document.querySelector('.js-limit');
 const statusNode = document.querySelector('.js-status');
+const setNode = document.querySelector('.js-btn-set');
 
 limitNode.innerNext = LIMIT;
 
@@ -43,8 +44,21 @@ buttonNode.addEventListener('click', function(){
     if(LIMIT>=sum){
         statusNode.innerText = 'Всё хорошо';
     }else{
-        statusNode.innerText = 'Всё плохо';
+        statusNode.innerText = `Всё плохо (${LIMIT-sum} руб.)`;
         statusNode.classList.add('status_red');
     }
 
 });
+
+setNode.addEventListener('click', function(){
+    totalNode = 0;
+    expensesListHTML.innerHTML = '';
+    statusNode.innerText = 'good'
+    totalNode.innerText = '0 rub.'
+    inputNode.value= '';
+    expenses = [];
+    statusNode = '';
+
+    });
+
+
