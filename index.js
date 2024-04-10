@@ -1,12 +1,12 @@
-const expenses = [];
-const LIMIT = 10000;
+let expenses = [];
+let LIMIT = 10000;
 
-const inputNode = document.querySelector('.js-input');
+let inputNode = document.querySelector('.js-input');
 const buttonNode = document.querySelector('.js-button');
-const historyNode = document.querySelector('.js-history');
-const totalNode = document.querySelector('.js-total');
-const limitNode = document.querySelector('.js-limit');
-const statusNode = document.querySelector('.js-status');
+let historyNode = document.querySelector('.js-history');
+let totalNode = document.querySelector('.js-total');
+let limitNode = document.querySelector('.js-limit');
+let statusNode = document.querySelector('.js-status');
 const setNode = document.querySelector('.js-btn-set');
 
 limitNode.innerNext = LIMIT;
